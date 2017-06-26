@@ -32,9 +32,9 @@ pipeline {
         sh "cp dist/rectangle_${env.BUILD_NUMBER}.jar /var/www/html/rectangles/all/"
       }
     }
-    stage("Running on centOS") {
+    stage("Running on CentOS") {
       agent {
-        label 'centOS'
+        label 'CentOS'
       }
       steps {
         sh "wget http://romeopeay2.mylabserver.com/all/rectangle_${env.BUILD_NUMBER}.jar"
