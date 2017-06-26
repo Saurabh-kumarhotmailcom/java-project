@@ -49,6 +49,7 @@ pipeline {
 	  steps {
 	    sh "wget http://romeopeay2.mylabserver.com/all/rectangle_${env.BUILD_NUMBER}.jar"
         sh "java -jar rectangle_${env.BUILD_NUMBER}.jar 3 4"
+      }
     }
   }
 }
