@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Unit Tests') {
       agent {
-        label 'apache'
+        label 'Apache'
       }
       steps {
         sh 'ant -f test.xml -v'
